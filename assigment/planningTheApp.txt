@@ -1,0 +1,20 @@
+Planning the App
+
+Components: 
+App 
+Header
+User
+Item-list
+Item 
+Item-detail
+Shopping-cart 
+Checkout
+
+Models: 
+user
+item
+
+Services:
+user
+item
+shopping-cart
