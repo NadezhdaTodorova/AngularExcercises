@@ -9,7 +9,6 @@ import { ShoppingListService } from '../shopping-list.service';
 })
 
 export class ShoppingListEditComponent {
-    
     @ViewChild('nameInput') nameInputRef: ElementRef;
     @ViewChild('amountInput') amountInputRef: ElementRef;
 
