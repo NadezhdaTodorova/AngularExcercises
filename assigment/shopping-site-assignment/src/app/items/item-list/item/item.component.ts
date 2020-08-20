@@ -1,21 +1,17 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Item } from '../../item.model';
-import { ItemService } from '../../item.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
-  styleUrls: ['./item.component.css']
+  styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
   @Input() item: Item;
 
-  constructor(private itemServive: ItemService) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-  }
-
-  onSelected(){
-    this.itemServive.itemSelected.emit(this.item);
   }
 }

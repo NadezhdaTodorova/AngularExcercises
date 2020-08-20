@@ -1,7 +1,7 @@
-<a href="#" (click)="onSelected()" >
-    <div class="col=">
+<a href="javascript.void(0)" [routerLink]="['/items/' + item.id]" >
+    <div class="col= item">
         <span>
-            <img src="{{ item.firstImagePath }}" alt="{{ item.name }}" class="img-responsive" style="max-height: 150px;">
+            <img [src]="item.imagesPath[0]" [alt]="item.name" class="img-responsive" id="imageFirst">
         </span>
         <div class="col-sm-6">
             <h4> {{ item.name }} </h4>

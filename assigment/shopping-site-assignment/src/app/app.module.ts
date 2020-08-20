@@ -11,12 +11,6 @@ import { ItemListComponent } from './items/item-list/item-list.component';
 import { ItemComponent } from './items/item-list/item/item.component';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { ItemsComponent } from './items/items.component';
-import { Routes, RouterModule } from '@angular/router';
-
-const appRoutes: Routes = [
-  { path: '', component: ItemsComponent },
-  { path: 'shopping-cart', component: ShoppingCartComponent },
-];
 
 @NgModule({
   declarations: [
@@ -32,8 +26,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

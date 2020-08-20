@@ -1,23 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemService } from './item.service';
-import { Item } from './item.model';
 
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrls: ['./items.component.css'],
-  providers: [ItemService]
+  styleUrls: ['./items.component.scss'],
 })
 export class ItemsComponent implements OnInit {
+  constructor() { }
 
-  selectedItem: Item;
-  constructor(private itemService: ItemService) { }
-
-  ngOnInit(): void {
-    this.itemService.itemSelected.subscribe(
-      (item: Item) => {
-        this.selectedItem = item;
-      }
-    );
-  }
+  ngOnInit(): void {  }
 }
